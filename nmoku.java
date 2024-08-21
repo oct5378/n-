@@ -145,10 +145,10 @@ public class nmoku{
 
             //n並び判定  //横  //縦  //斜め1 (右下へ走査)  //斜め2 (右上へ走査)  の4部分
             //横
-            for (int t=0;t<y;t++)
+            for (int s=0;s<x;s++)
             {
                 count=0;
-                for (int s=0;s<x;s++)
+                for (int t=0;t<y;t++)
                 {
                     if (ban[s][t]==stone){count+=1;}
                     else {count=0;}
@@ -157,10 +157,10 @@ public class nmoku{
             }
 
             //縦
-            for (int s=0;s<x;s++)
+            for (int t=0;t<y;t++)
             {
                 count=0;
-                for (int t=0;t<y;t++)
+                for (int s=0;s<x;s++)
                 {
                     if (ban[s][t]==stone){count+=1;}
                     else {count=0;}
